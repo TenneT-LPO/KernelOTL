@@ -14,6 +14,16 @@
 @prefix tnt-st: <http://otl.tennet.eu/tnt/def/st/> .
 @prefix tnt-xr: <http://otl.tennet.eu/tnt/def/xr/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lpo:<http://ot.tennet.eu/tnt/lpo#>.
+
+lpo:example a rdf:Property ;
+    rdfs:seeAlso "TAG0028"^^xsd:anyURI ;
+    rdfs:subPropertyOf skos:example ;
+    skos:definition "beispiel"@de,
+        "example"@en,
+        "vorrbeeld"@nl ;
+    skos:description "Example for a given class or proprety";
+    skos:example "LPO example: Not available - see description".s
 
 tnt-ot:ACDCConverter a rdfs:Class ;
     tnt-xr:REF_IEC-CIM_Code "ACDCConverter"^^xsd:string ;
@@ -28840,7 +28850,7 @@ tnt-et:administratedBy a rdf:Property ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment"@en,
         "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en ;
     skos:description "LPO description:Administrated By means: it is maintained by unit or organisation.";
-    skos:example "LPO example: GFO-O".
+    lpo:example "LPO example: GFO-O".
 
 tnt-et:creationDate a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_LifeCycleData ;
@@ -29066,7 +29076,9 @@ tnt-et:administratorName a rdf:Property ;
         "administrator"@en,
         "Beheerder"@nl ;
     skos:scopeNote "Applicable for the Aspects: Physical equipment, Component class"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en ;
+    skos:description "LPO description:Organisation that is responsible for maintaining a (part of) the high voltage grid. The administrator is not always the juridical owner.";
+    lpo:example "LPO example: Not available - see description".
 
 tnt-et:costCenter a rdf:Property ;
     rdfs:seeAlso "TAG0007"^^xsd:anyURI ;
@@ -29341,8 +29353,8 @@ tnt-et:aliasName a rdf:Property ;
     skos:notation "http://otl.tennet.eu/tnt/def/et/ab950d0d-65aa-4c2f-9cff-5c749f4d9d81"^^xsd:string ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
         "Applicable for the Contexts: Netherlands, Onshore"@en ;
-    skos:description "The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy (IEC-CIM)";
-    skos:example "Not available. Please refer to description".
+    skos:description "LPO description: The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy (IEC-CIM).";
+    lpo:example "LPO example: Not available - see description".
 
 tnt-et:catenaryParameter a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_MetadataAttribute ;
@@ -30080,7 +30092,9 @@ tnt-et:annotation a rdf:Property ;
         "Annotation"@en,
         "notitie"@nl ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+    skos:description "Annotation and long note. Similar to Description";
+    skos:example "LPO example: Not available - see description".
 
 tnt-et:appliesTo a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_GroupingAndStructure ;
