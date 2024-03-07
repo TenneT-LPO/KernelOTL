@@ -28674,7 +28674,9 @@ tnt-et:contract a rdf:Property ;
         "contract number"@en,
         "Contract Nr."@nl ;
     skos:scopeNote "Applicable for the Aspects: Physical equipment, Information"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en ;
+    skos:description "TenneT contract number where the object was part of at the moment of construction";
+    lpo:example "LPO example: see enumeration".
 
 tnt-et:country a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_GeographicLocation ;
@@ -30799,8 +30801,8 @@ tnt-et:coolingType a rdf:Property ;
         "Koelingtype"@nl ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
         "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
-    skos:description "LPO definition:"";
-    skos:example "LPO example:"".
+    skos:description "LPO definition:ONAF: Oil Natural - Air Forced.  Internal cooling by means of natural convection, external forced cooling by means of automa"";
+    skos:example "LPO example: see enumeration"".
 
 tnt-et:description a rdf:Property ;
     rdfs:seeAlso "TAG0002"^^xsd:anyURI ;
