@@ -29338,7 +29338,9 @@ tnt-et:aliasName a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_MetadataAttribute ;
     skos:notation "http://otl.tennet.eu/tnt/def/et/ab950d0d-65aa-4c2f-9cff-5c749f4d9d81"^^xsd:string ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
-        "Applicable for the Contexts: Netherlands, Onshore"@en .
+        "Applicable for the Contexts: Netherlands, Onshore"@en ;
+    skos:description "The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy (IEC-CIM)";
+    skos:example "Not available. Please refer to description".
 
 tnt-et:catenaryParameter a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_MetadataAttribute ;
