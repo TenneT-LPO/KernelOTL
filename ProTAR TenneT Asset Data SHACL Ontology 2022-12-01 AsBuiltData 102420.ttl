@@ -28655,7 +28655,9 @@ tnt-et:breakingCapacity a rdf:Property ;
     skos:scopeNote "Applicable for the Aspects: Physical equipment, Functional location, Asset product type"@en,
         "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
     bs:quantityKind <http://qudt.org/vocab/quantitykind/ElectricCurrent> ;
-    bs:unit <http://qudt.org/vocab/unit/A> .
+    bs:unit <http://qudt.org/vocab/unit/A> ;
+    skos:description "LPO description: The maximum fault current a breaking device can break safely under prescribed conditions of use. Can be both AC and DC. [Source: CIM]. Only applicable where the Kernel OTL defines 'Switch; Disconnector; GroundDisconnector; Breaker'";
+    lpo:example "LPO example: Not available - see description".
 
 tnt-et:contract a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_LineOnlyAttribute ;
@@ -30125,7 +30127,9 @@ tnt-et:capacity a rdf:Property ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
         "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
     bs:quantityKind <http://qudt.org/vocab/quantitykind/Capacitance> ;
-    bs:unit <http://qudt.org/vocab/unit/MicroFARAD> .
+    bs:unit <http://qudt.org/vocab/unit/MicroFARAD> ;
+    skos:description "LPO description: Electrical parameter";
+    lpo:example "LPO example: 99.99".
 
 tnt-et:coilRegulator a rdf:Property ;
     rdfs:seeAlso "TAG0143"^^xsd:anyURI ;
