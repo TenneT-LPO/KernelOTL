@@ -6551,7 +6551,11 @@ tnt-pl:LineDamperConstructionType a rdfs:Class ;
     skos:prefLabel "Schwingungsschutz ausführung"@de,
         "Vibrationdamper version"@en,
         "Uitvoeringsvorm TrillingsDemper"@nl ;
-    bs:abbreviation "LineDamperConstructionType"^^xsd:string .
+    bs:abbreviation "LineDamperConstructionType"^^xsd:string ;
+    skos:description "Type of construction defined by the Design type. Depends on which Kernel Object that is selected. Only applicable for the following Kernel Object Types: 
+DifferentialRelay; Bay; Substation; PowerTransformer; SurgeArrester; Disconnector; GroundDisconnector; Breaker; Driver; InsulatorChain; AirConditioner; VibrationDamper; Marker; LineSpacer. 
+See ProTAR Picklist Export";
+    lpo:example "LPO example: see enumeration".
 
 tnt-pl:LineMarkerConstructionType a rdfs:Class ;
     rdfs:subClassOf bs:EnumerationType ;
@@ -30778,7 +30782,9 @@ Kenmerk of installatie overdekt is
         "Containment type"@en,
         "Installatie overdekt (ja/nee)"@nl ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+    skos:description "Design";
+    lpo:example "LPO example: see enumeration".
 
 tnt-et:coolingType a rdf:Property ;
     rdfs:seeAlso "TAG0064"^^xsd:anyURI ;
