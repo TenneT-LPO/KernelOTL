@@ -28838,7 +28838,9 @@ tnt-et:administratedBy a rdf:Property ;
         "Administrated by"@en,
         "beheerd door"@nl ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en ;
+    skos:description "LPO description:Administrated By means: it is maintained by unit or organisation.";
+    skos:example "LPO example: GFO-O".
 
 tnt-et:creationDate a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_LifeCycleData ;
@@ -30762,7 +30764,9 @@ tnt-et:coolingType a rdf:Property ;
         "Cooling type"@en,
         "Koelingtype"@nl ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+    skos:description "LPO definition:"";
+    skos:example "LPO example:"".
 
 tnt-et:description a rdf:Property ;
     rdfs:seeAlso "TAG0002"^^xsd:anyURI ;
