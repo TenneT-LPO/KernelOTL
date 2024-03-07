@@ -6203,7 +6203,9 @@ tnt-pl:ConnectionType a rdfs:Class ;
     skos:prefLabel "Anschlußart"@de,
         "Connection type"@en,
         "Connectie type"@nl ;
-    bs:abbreviation "ConnectionType"^^xsd:string .
+    bs:abbreviation "ConnectionType"^^xsd:string ;
+    skos:description "How the object is connected to the system";
+    lpo:example "LPO example: see enumeration".
 
 tnt-pl:ConstructionTypeTSA a rdfs:Class ;
     rdfs:subClassOf bs:EnumerationType ;
@@ -30157,13 +30159,17 @@ Dit attribuut is alleen van toepassing bij een veld op een TenneT of RNB/TenneT 
         "Connected party"@en,
         "Aangeslotene"@nl ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+    skos:description "Client that is connected to an Onshore Station. Will be filled in the Operation and Maintenance phase if applicable";
+    lpo:example "LPO example: Not available - see description".
 
 tnt-et:designationType a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_MetadataAttribute ;
     skos:notation "http://otl.tennet.eu/tnt/def/et/a6775ef7-3e81-4142-9369-aa36b267bf73"^^xsd:string ;
     skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+    skos:description "Client that is connected to an Onshore Station. Will be filled in the Operation and Maintenance phase if applicable";
+    lpo:example "LPO example: Not available - see description".
 
 tnt-et:dueDate a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_LifeCycleData ;
