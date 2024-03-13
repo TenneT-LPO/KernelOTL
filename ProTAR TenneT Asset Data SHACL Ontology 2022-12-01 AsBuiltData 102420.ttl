@@ -28602,7 +28602,9 @@ tnt-et:createdUser a rdf:Property ;
         "Created user"@en,
         "Gemaakt door gebruiker"@nl ;
     skos:scopeNote "Applicable for the Aspects: Information"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en ;
+    skos:description "A document metadata field: the creator of the document";
+    lpo:example: "See enumeration type".
 
 tnt-et:phaseNumber a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_ElectricalParameter ;
@@ -28686,7 +28688,9 @@ tnt-et:country a rdf:Property ;
         "Country"@en,
         "Land"@nl ;
     skos:scopeNote "Applicable for the Aspects: Physical equipment, Functional location, Organisation"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+    skos:description "Not available, please refer to :scopeNote";
+    lpo:example "See enumeration values".
 
 tnt-et:dCC_ApplicationArea a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_DocumentMetadata ;
@@ -28871,7 +28875,9 @@ tnt-et:creationDate a rdf:Property ;
         "Creation date"@en,
         "Aanleg Datum"@nl ;
     skos:scopeNote "Applicable for the Aspects: Physical equipment, Functional location, Asset product type, Information"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en ;
+    skos:description "Date of creation, YYYY-MM-DD format";
+    skos:example "2024-03-07".
 
 tnt-et:datasheet a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_DocumentType ;
@@ -28882,7 +28888,9 @@ tnt-et:datasheet a rdf:Property ;
         "Datasheet"@en,
         "Datasheet"@nl ;
     skos:scopeNote "Applicable for the Aspects: Asset product type, Component class"@en,
-        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en .
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en ;
+    skos:description "A document providing the specificaiton for a particular product";
+    lpo:example "Not available, see description".
 
 tnt-et:fileName a rdf:Property ;
     rdfs:subPropertyOf tnt-et:CAT_DocumentMetadata ;
