@@ -24212,8 +24212,8 @@ tnt-et:title rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/b3e1bb45-6e95-4fdf-8e7b-deb81c4173c2"^^xsd:string ; 
   skos:prefLabel "Titel des Dokuments"@de, "Document title"@en, "Document titel"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Information"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
-  skos:description "";
-  lpo:example "".
+  skos:description "Short clear text description of the content of the document. NOTE A title may have different language variants. SO 7200:2004";
+  lpo:example " Operation Manual High Pressure Inline Pump".
 tnt-et:changeReason rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_MetadataAttribute ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/d568be6e-513b-49be-b589-246b388fd1f7"^^xsd:string ; 
@@ -24238,8 +24238,8 @@ tnt-et:servicedBy rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/c37a5069-dd30-430c-8319-34c4b5e74556"^^xsd:string ; 
   skos:prefLabel "betreut von"@de, "serviced by"@en, "onderhouden door"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Physical equipment"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
-  skos:description "";
-  lpo:example "". 
+  skos:description "Organisation that provides services to customers. serviceSupplier (was: maintainer) replaces "service provider (identificatie)" (NL).";
+  lpo:example " Not available - see description". 
 tnt-et:sourceSystemParentID rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0220"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_IdentificationAndTagging ; 
@@ -24253,8 +24253,8 @@ tnt-et:systemStatus rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/d17b6d5e-da93-4a90-b0b9-be586e69f9a0"^^xsd:string ; 
   skos:prefLabel "Systemstatus"@de, "System status"@en, "Systeemstatus"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Physical equipment, Functional location"@en, "Applicable for the Contexts: Germany, Onshore"@en ;
-  skos:description "";
-  lpo:example "".
+  skos:description "A system status informs the user that a particular function (such as installation, removal, decommissining) was carried out";
+  lpo:example " installation".
 tnt-et:breakingCapacity rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
   skos:definition "Bei Sicherungen (Schmelzsicherungen und Leitungsschutzschalter) sowie bei Leistungsschaltern wird der Abschaltstrom (hier ist dies der Kurzschlussstrom) auch als Schaltvermögen bezeichnet."@de, "Breaking capacity [I break]: the maximum value of the current (rms if ac) which an output circuit of a relay is capable of breaking at specified contact voltage and ambient temperature."@en, "Maximum schakelspanning: De hoogste waarde van de spanning inclusief de in het net gebruikelijke toleranties die het contact op grond van de nominale isolatiespanning en de nominale impulsspanning schakelen kan."@nl ; 
@@ -24323,8 +24323,8 @@ tnt-et:serviceAddress rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/56b4260e-26f7-4b4a-9096-1f6fca43417e"^^xsd:string ; 
   skos:prefLabel "Serviceadresse"@de, "Service Address"@en, "service adres"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
-  skos:description "";
-  lpo:example "". 
+  skos:description "serviceAddress::street serviceAddress::postalCode serviceAddress::municipality serviceAddress::country";
+  lpo:example "Rustenburgerweg 1B 9255 XH Tytsjerk NL". 
 tnt-et:sourceSystemKey rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0486"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_IdentificationAndTagging ; 
@@ -24341,8 +24341,8 @@ tnt-et:width rdf:type rdf:Property ;
   skos:scopeNote "Applicable for the Aspects: Physical equipment, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Length> ; 
   <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/M> ;
-  skos:description "";
-  lpo:example "".
+  skos:description "Not available";
+  lpo:example "1.2".
 tnt-et:objectTypeNote rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_MetadataAttribute ; 
   skos:definition "Platzhalter für eine Kopie der Objekttypendefinition zum Zeitpunkt der Objekttypenzuweisung."@de, "Placeholder for, a copy of the, object type definition at the time of the object type allocation."@en, "Plaatshouder voor, een kopie van de objecttype-definitie op het moment van de objecttype-toewijzing."@nl ; 
@@ -24392,8 +24392,8 @@ tnt-et:weightEmpty rdf:type rdf:Property ;
   skos:scopeNote "Applicable for the Aspects: Physical equipment, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Mass> ; 
   <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloGM> ;
-  skos:description "";
-  lpo:example "". 
+  skos:description "Not available";
+  lpo:example "300". 
 tnt-et:actorName rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_StakeholderAndRole ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/111ef04a-56d4-4773-9c76-50cf9e879a87"^^xsd:string ; 
@@ -24668,8 +24668,8 @@ tnt-et:serialNumber rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/6b459bec-52ee-40ce-ba65-75e204a521f6"^^xsd:string ; 
   skos:prefLabel "Seriennummer"@de, "Serial number"@en, "serienr TenneT"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Physical equipment, Asset product type, Information, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en ;
-  skos:description "";
-  lpo:example "".
+  skos:description "The serial number is assigned by TenneT as opposed to the manufacturer assigned serial number.";
+  lpo:example "10008401".
 tnt-et:theme rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_DocumentMetadata ; 
   skos:definition "Subject of the document"@en, """Thema
@@ -24687,7 +24687,7 @@ tnt-et:universalResourceIdentifier rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/a8c75aa8-3190-4638-a2d6-10d2b3a9b2fe"^^xsd:string ; 
   skos:scopeNote "Applicable for the Aspects: Physical equipment, Functional location, Asset product type, Information"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en ;
   skos:description "";
-  lpo:example "".
+  lpo:example "1f8a8614-0b2c-4f2d-a921-fffe96f63d21".
 tnt-et:connectionType rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_MechanicalAndDimension ; 
   skos:altLabel "Verbindungsart"@de ; 
@@ -25191,8 +25191,8 @@ tnt-et:secondaryNeutralpointOfTransformer rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/fdb72157-3c07-4fd2-9b02-27906ebcd882"^^xsd:string ; 
   skos:prefLabel "Sekundärer Sternpunkterdung"@de, "Secondary neutral point of transformer"@en, "Sterpuntaarding secundair"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ;
-  skos:description "";
-  lpo:example "".
+  skos:description "Neutral earthing of a star-connected or zigzag-connected winding at the secondary side of a transformer. Only applicable for Kernel Object Type PowerTransformer ";
+  lpo:example " Not available - see description".
 tnt-et:serviceProviderIdentificatie rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0017"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_StakeholderAndRole ; 
@@ -25218,8 +25218,8 @@ tnt-et:tresholdVoltage rdf:type rdf:Property ;
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Voltage> ; 
   <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloV> ;
-  skos:description "";
-  lpo:example "".
+  skos:description "response voltage";
+  lpo:example " Not available - see description".
 tnt-et:value rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_MetadataAttribute ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/3e4f6d50-61ca-4d97-8c22-ce75874ddc7f"^^xsd:string ; 
@@ -25443,8 +25443,8 @@ tnt-et:room rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/ecb616b9-3588-493e-b5d1-8ab1f61a851f"^^xsd:string ; 
   skos:prefLabel "Raum"@de, "Room"@en, "Kamer"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
-  skos:description "";
-  lpo:example "".
+  skos:description "The Room where the object is located, for Reference Designation this is Site of Installation. ";
+  lpo:example " ++T001 AZA100.001".
 tnt-et:shortCircuitBreakingCurrent rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0078"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -25513,8 +25513,8 @@ tnt-et:typeTestReport rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/7ed903ff-2699-4e01-82fe-1afcc4c48cf2"^^xsd:string ; 
   skos:prefLabel "typeTestReport"@de, "TypeTestReport"@en, "TypeTestReport"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
-  skos:description "";
-  lpo:example "".
+  skos:description "Not available";
+  lpo:example "Not available - see description".
 tnt-et:vectorGroup rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0493"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -25522,7 +25522,9 @@ tnt-et:vectorGroup rdf:type rdf:Property ;
   skos:definition "Replaces Sys1 Schaltgruppe and other placeholders"@de, "A vector group is the International Electrotechnical Commission (IEC) method of categorizing the primary and secondary winding configurations of three-phase transformers. It indicates the windings configurations and the difference in phase angle between them."@en, "Een vectorgroep is de methode van de IEC om de configuratie van de primaire en secundaire wikkelingen van drie fase transformatoren te categoriseren. De vectorgroep geeft de configuratie van de wikkelingen en het verschil in  fasehoek tussen de wikkelingen weer."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/432789f6-fb08-4dbe-8918-e030e55b9567"^^xsd:string ; 
   skos:prefLabel "Schaltgruppe"@de, "Vector group"@en, "Vectorgroep"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+  skos:description "A vector group is the International Electrotechnical Commission (IEC) method of categorizing the primary and secondary windi";
+  lpo:example:" see enumeration".
 tnt-et:version rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_MetadataAttribute ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/fd3acd03-fb15-4198-ba3e-907a3f13d794"^^xsd:string ; 
@@ -25550,8 +25552,8 @@ tnt-et:zeroSequenceImpedanceMiddlePosition rdf:type rdf:Property ;
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ; 
   <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/PERCENT> ;
-  skos:description "";
-  lpo:example "". 
+  skos:description "Not available";
+  lpo:example "Not available - see description". 
 tnt-et:assetFunction rdf:type rdf:Property ; 
   rdfs:seeAlso "0437"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_FunctionalDesignParameter ; 
@@ -25647,8 +25649,8 @@ tnt-et:setNominalCurrent rdf:type rdf:Property ;
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ElectricCurrent> ; 
   <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> ;
-  skos:description "";
-  lpo:example "". 
+  skos:description "set Nominal current before the protection relay kicks in. Only applicable for Kernel Object types CurrentTransformer; CombinedTransformer; MeasuringCore; MeasureWinding";
+  lpo:example " Not available - see description". 
 tnt-et:shortcircuitResistanceNominalPosition rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0076"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -25689,24 +25691,24 @@ tnt-et:totalLosses rdf:type rdf:Property ;
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Power> ; 
   <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> ;
-  skos:description "";
-  lpo:example "".
+  skos:description "Difference between the input power and the output power, equivalent to the sum of the constant losses, the load losses, the";
+  lpo:example " Not available - see description".
 tnt-et:validFrom rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_LifeCycleData ; 
   skos:definition "Die Gültigkeit der Registrierung wird durch die Attribute validFrom und validUpto begrenzt."@de, "The validity of the registration is limited by the validFrom and validUpto attributes."@en, "De geldigheid van de registratie wordt beperkt door de attributen validFrom en validUpto."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/2780d43e-d7ab-4749-ae86-f379f5442b0d"^^xsd:string ; 
   skos:prefLabel "Gültig ab"@de, "Valid from"@en, "Geldig van"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Germany, Onshore"@en ;
-  skos:description "";
-  lpo:example "".
+  skos:description "The validity of the registration is limited by the validFrom and validUpto attributes.";
+  lpo:example "99991231".
 tnt-et:validUpto rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_LifeCycleData ; 
   skos:definition "Die Gültigkeit der Registrierung wird durch die Attribute validFrom und validUpto begrenzt."@de, "The validity of the registration is limited by the validFrom and validUpto attributes."@en, "De geldigheid van de registratie wordt beperkt door de attributen validFrom en validUpto."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/9062b926-8e29-44c1-ac66-4495b03e5bc9"^^xsd:string ; 
   skos:prefLabel "Gültig bis"@de, "Valid upto"@en, "Geldig tot"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Germany, Onshore"@en ;
-  skos:description "";
-  lpo:example "".
+  skos:description "The validity of the registration is limited by the validFrom and validUpto attributes.";
+  lpo:example "20231104".
 tnt-et:CAT\_LifeCycleData rdf:type rdf:Property ; 
   skos:note "Life cycle (dates) and historic events log"^^xsd:string ; 
   skos:prefLabel "Life-cycle & historic data"@de, "Life-cycle & historic data"@en, "Life-cycle & historic data"@nl . 
