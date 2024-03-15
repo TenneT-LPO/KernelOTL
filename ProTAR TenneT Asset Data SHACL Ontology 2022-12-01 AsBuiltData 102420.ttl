@@ -24159,7 +24159,9 @@ tnt-et:product rdf:type rdf:Property ;
   rdfs:subPropertyOf tnt-et:CAT\_DocumentMetadata ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/04cd6694-2782-4926-8ca0-95e1ae7df600"^^xsd:string ; 
   skos:prefLabel "Produkt"@de, "Product"@en, "Produkt"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Information"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Information"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:revisionCode rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_DocumentMetadata ; 
   skos:definition "Identifier of a formally approved or intended to be approved document version. ISO 7200:2004; Revision index"@en ; 
@@ -24301,7 +24303,9 @@ tnt-et:operatingManualReference rdf:type rdf:Property ;
   rdfs:subPropertyOf tnt-et:CAT\_DocumentMetadata ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/bc264c57-522d-419a-b61d-7fc9352d0ab5"^^xsd:string ; 
   skos:prefLabel "Betriebsanleitung Nr."@de, "Operating manual reference"@en, "Handleiding referentie"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Physical equipment, Functional location, Information"@en, "Applicable for the Contexts: Germany, Onshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Physical equipment, Functional location, Information"@en, "Applicable for the Contexts: Germany, Onshore"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:qualityGate rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_LifeCycleData ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/7402f3c6-9231-4b7f-9f54-b70d4ac12ced"^^xsd:string ; 
@@ -24336,13 +24340,17 @@ tnt-et:width rdf:type rdf:Property ;
   skos:prefLabel "Breite"@de, "Width"@en, "Breedte"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Physical equipment, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Length> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/M> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/M> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:objectTypeNote rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_MetadataAttribute ; 
   skos:definition "Platzhalter für eine Kopie der Objekttypendefinition zum Zeitpunkt der Objekttypenzuweisung."@de, "Placeholder for, a copy of the, object type definition at the time of the object type allocation."@en, "Plaatshouder voor, een kopie van de objecttype-definitie op het moment van de objecttype-toewijzing."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/f68ccd8e-a3ad-426a-b8e9-bac5eecb8a80"^^xsd:string ; 
   skos:prefLabel "Asset typ Notiz"@de, "AssetType Note"@en, "Asset Type Opmerking"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Asset container, Asset product type, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Offshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Asset container, Asset product type, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Offshore"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:quantity rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_MechanicalAndDimension ; 
   skos:altLabel "Anzahl"@de ; 
@@ -24383,7 +24391,9 @@ tnt-et:weightEmpty rdf:type rdf:Property ;
   skos:prefLabel "Leergewicht"@de, "Weight empty"@en, "Leeggewicht"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Physical equipment, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Mass> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloGM> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloGM> ;
+  skos:description "";
+  lpo:example "". 
 tnt-et:actorName rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_StakeholderAndRole ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/111ef04a-56d4-4773-9c76-50cf9e879a87"^^xsd:string ; 
@@ -24421,7 +24431,9 @@ tnt-et:functionLabel rdf:type rdf:Property ;
   skos:definition "Een nadere precisering van de plaats waar een object zich bevindt in het veld."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/03b559ff-f631-4339-839b-a77681bc558f"^^xsd:string ; 
   skos:prefLabel "Tech.Identnr."@de, "Function Label"@en, "TBD-verkorting"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Functional location, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en . 
+  skos:scopeNote "Applicable for the Aspects: Functional location, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:gridArea rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_GroupingAndStructure ; 
   skos:altLabel "Raum"@de ; 
@@ -24500,7 +24512,9 @@ tnt-et:organisationUnit rdf:type rdf:Property ;
 tnt-et:productTypeName rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_ProductTypeCatalogue ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/4c81f9fd-8fd1-40be-9478-dc6bf3f73b11"^^xsd:string ; 
-  skos:scopeNote "Applicable for the Aspects: Physical equipment, Asset product type, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Physical equipment, Asset product type, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:projectState rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0015"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_StateVariables ; 
@@ -24613,19 +24627,25 @@ tnt-et:objectParentID rdf:type rdf:Property ;
   skos:definition "AssetParentID gibt die Kennung des übergeordneten Objekts eines Assets an. Sie stellt die dominante Beziehung zwischen zwei Assets dar. Assets können nur ein einziges übergeordnetes Element haben."@de, "AssetParentID specifies the Identifier of the Parent of an Asset. It represents the dominant relation between two assets. Assets may have one single parent only."@en, "Dit is het object waarvan het nieuwe object onderdeel uitmaakt, ofwel het bovenliggende of ouder-object. Er kan één enkele ouder worden gespecificeerd."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/44111021-d761-475b-a104-dd5c1810ecfe"^^xsd:string ; 
   skos:prefLabel "Überg. Equip."@de, "Asset parent-ID"@en, "ouderobject-ID"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Physical equipment, Functional location, Asset product type, Information"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Physical equipment, Functional location, Asset product type, Information"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:objectTypeName rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_MetadataAttribute ; 
   skos:definition """Objektart
 Typbezeichng."""@de, "CIM::Type - Utility-specific classification of Asset and its subtypes, according to their corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.)."@en, "Het objecttype geeft aan van welk type een bedrijfsmiddel is. Dit is van belang omdat de (technische) kenmerken (attributen) per objecttype verschillend zijn. Zo heeft een station andere technische kenmerken dan een laadstroomcompensatiespoel."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/e4776eee-a60d-435d-b81e-86ab1590569b"^^xsd:string ; 
   skos:prefLabel "Equipmenttyp"@de, "asset object type"@en, "objecttype"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en . 
+  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:project rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_StakeholderAndRole ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/c00027b3-f7c7-489b-b985-3a95d054a01b"^^xsd:string ; 
   skos:prefLabel "PROJEKT"@de, "PROJECT"@en ; 
-  skos:scopeNote "Applicable for the Aspects: Physical equipment, Materials class, Component class"@en, "Applicable for the Contexts: Germany, Onshore, Offshore, Power lines"@en . 
+  skos:scopeNote "Applicable for the Aspects: Physical equipment, Materials class, Component class"@en, "Applicable for the Contexts: Germany, Onshore, Offshore, Power lines"@en ;
+  skos:description "";
+  lpo:example "". 
 tnt-et:realizedBy rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_GroupingAndStructure ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/296f9513-1b9a-4fae-8467-a983e79c31c7"^^xsd:string ; 
@@ -24766,7 +24786,9 @@ tnt-et:insulationMediumWeight rdf:type rdf:Property ;
   skos:prefLabel "Isoliermittelgewicht"@de, "Insulation medium weight"@en, "Gas gewicht"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Physical equipment, Asset product type"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Mass> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloGM> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloGM> ;
+  skos:description "";
+  lpo:example "". 
 tnt-et:lightningDiversionCurrent rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0400"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -24859,7 +24881,9 @@ tnt-et:neutralEarthingPrimaryOfTransformer rdf:type rdf:Property ;
   skos:example "XXX"^^xsd:string ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/b7f87ccc-7686-4494-b02d-b59bc173714e"^^xsd:string ; 
   skos:prefLabel "Erdungssternpunkt primär"@de, "Earthing star point primary"@en, "Sterpuntaarding primair"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:noLoadLosses100Excitation rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0098"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_TransformerSpecificFeature ; 
@@ -24869,7 +24893,9 @@ tnt-et:noLoadLosses100Excitation rdf:type rdf:Property ;
   skos:prefLabel "Leerlaufverluste bei 100% Erregung"@de, "No-load losses at 100% excitation"@en, "Nullastverlies 100 proc bekrachtiging"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Power> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:noLoadLosses110Excitation rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0099"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_TransformerSpecificFeature ; 
@@ -24879,7 +24905,9 @@ tnt-et:noLoadLosses110Excitation rdf:type rdf:Property ;
   skos:prefLabel "Leerlaufverluste bei 110% Erregung"@de, "No-load losses at 110% excitation"@en, "Nullastverlies 110 proc bekrachtiging"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Power> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:noLoadLosses90Excitation rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0100"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_TransformerSpecificFeature ; 
@@ -24889,7 +24917,9 @@ tnt-et:noLoadLosses90Excitation rdf:type rdf:Property ;
   skos:prefLabel "Leerlaufverluste bei 90% Erregung"@de, "No-load losses at 90% excitation"@en, "Nullastverlies 90 proc bekrachtiging"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Power> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:nominalCurrentPrimarilyAsInstalledSummer rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
   skos:definition """Nominal current primarily as installed summer
@@ -24898,7 +24928,9 @@ tnt-et:nominalCurrentPrimarilyAsInstalledSummer rdf:type rdf:Property ;
   skos:prefLabel "Nennstrom primär wie installiert (Sommerbedingungen)"@de, "Nominal current primarily as installed (summer conditions)"@en, "Nominale stroom primair als geïnstalleerd zomer"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ElectricCurrent> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> ;
+  skos:description "";
+  lpo:example "". 
 tnt-et:nominalCurrentPrimarilyAsInstalledWinter rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
   skos:definition "Nominale stroomwaarde waarop een asset in de winterperiode opereerd."@nl ; 
@@ -24906,7 +24938,9 @@ tnt-et:nominalCurrentPrimarilyAsInstalledWinter rdf:type rdf:Property ;
   skos:prefLabel "Nennstrom primär wie installiert (Winterbedingungen)"@de, "Nominal current primarily as installed  (winter conditions)"@en, "Nominale stroom primair als geïnstalleerd winter"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ElectricCurrent> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> ;
+  skos:description "";
+  lpo:example "". 
 tnt-et:nominalCurrentSecondaryAsInstalledSummer rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
   skos:definition "Secundaire stroomwaarde waarop een asset in de zomerperiode opereerd."@nl ; 
@@ -24914,7 +24948,9 @@ tnt-et:nominalCurrentSecondaryAsInstalledSummer rdf:type rdf:Property ;
   skos:prefLabel "Nennstrom sekundär wie installiert (Sommerbedingungen)"@de, "Nominal current secondary as installed (summer conditions)"@en, "Nominale stroom secundair als geïnstalleerd zomer"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ElectricCurrent> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:nominalCurrentSecondaryAsInstalledWinter rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
   skos:definition "Nominal current secondary if installed winter"@en, "Secundaire stroomwaarde waarop een asset in de winterperiode opereerd."@nl ; 
@@ -24922,7 +24958,9 @@ tnt-et:nominalCurrentSecondaryAsInstalledWinter rdf:type rdf:Property ;
   skos:prefLabel "Nennstrom sekundär wie installiert (Winterbedingungen)"@de, "Nominal current secondary as installed (winter conditions)"@en, "Nominale stroom secundair als geïnstalleerd winter"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ElectricCurrent> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:nominalCurrentTertiaryAsInstalledSummer rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
   skos:definition "Tertiaire stroomwaarde waarop een asset in de zomerperiode opereerd."@nl ; 
@@ -24930,7 +24968,9 @@ tnt-et:nominalCurrentTertiaryAsInstalledSummer rdf:type rdf:Property ;
   skos:prefLabel "Nennstrom Tertiär wie installiert (Sommerbedingungen)"@de, "Nominal current tertiary as installed (summer conditions)"@en, "Nominale stroom tertiair als geïnstalleerd zomer"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ElectricCurrent> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:nominalCurrentTertiaryAsInstalledWinter rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
   skos:definition "Tertiaire stroomwaarde waarop een asset in de winterperiode opereerd."@nl ; 
@@ -24969,7 +25009,9 @@ tnt-et:nominalRatedOverloadPerMVA rdf:type rdf:Property ;
   skos:prefLabel "Nominale Überlast MVA in Prozent"@de, "Nominal (rated) overload Percentage"@en, "Nominale overbelasting MVA in procenten"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/PERCENT> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/PERCENT> ;
+  skos:description "";
+  lpo:example "". 
 tnt-et:nominalRatedOverloadPerMW rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0087"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -24979,7 +25021,9 @@ tnt-et:nominalRatedOverloadPerMW rdf:type rdf:Property ;
   skos:prefLabel "Nominale Überlast MW in Prozent"@de, "Nominal (rated) overload Secundary"@en, "Nominale overbelasting MW in proc"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/PERCENT> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/PERCENT> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:nominalRatedOverloadPrimary rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0085"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -24989,7 +25033,9 @@ tnt-et:nominalRatedOverloadPrimary rdf:type rdf:Property ;
   skos:prefLabel "Nennüberlastung"@de, "Nominal (rated) overload Primary"@en, "Nominale overbelasting"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/PERCENT> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/PERCENT> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:nominalRatedPower rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0084"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -25302,7 +25348,9 @@ tnt-et:loadLossesNominalPositionPrimaryTertiary rdf:type rdf:Property ;
   skos:prefLabel "Kurzschlussverluste primär-tertiär (Kupferverluste)"@de, "shortcircuit losses primary-tertiary (copper losses)"@en, "Kortsluitverlies prim-tert (Cu-verlies)"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Power> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:loadLossesNominalPositionSecundaryTertiary rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0074"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_TransformerSpecificFeature ; 
@@ -25313,7 +25361,9 @@ tnt-et:loadLossesNominalPositionSecundaryTertiary rdf:type rdf:Property ;
   skos:prefLabel "Kurzschlussverluste sekundär-tertiär (Kupferverluste)"@de, "shortcircuit losses secundary-tertiary (copper losses)"@en, "Kortsluitverlies sec-tert (Cu-verlies)"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Power> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/KiloW> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:modificationDate rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_LifeCycleData ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/aac902b0-03bf-45ce-93e9-fc9557f91f31"^^xsd:string ; 
@@ -25330,7 +25380,9 @@ A conventional value of apparent power, establishing a basis for the design of a
   skos:prefLabel "Bem.-Leistung"@de, "Nominal (rated) apparent power primary"@en, "Nominaal schijnbaar vermogen primair"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ApparentPower> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/MegaV-A> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/MegaV-A> ;
+  skos:description "";
+  lpo:example "". 
 tnt-et:origin rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_MetadataAttribute ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/d716ca9a-e9fb-4cb8-bd2e-27305dda5aa8"^^xsd:string ; 
@@ -25345,14 +25397,18 @@ tnt-et:parallel\_weerstand rdf:type rdf:Property ;
   skos:prefLabel "Paralleler Widerstand"@de, "shunt resistor / parallel resistance"@en, "Parallel weerstand"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Resistance> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/OHM> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/OHM> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:phoneNumber rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_GeographicLocation ; 
   skos:altLabel "Telefon"@de ; 
   skos:definition "Telefoonnummer (van de beheerder)."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/6b837e0d-6efd-4354-b5f1-86ea4b4c7555"^^xsd:string ; 
   skos:prefLabel "Telefonnummer"@de, "Phone number"@en, "Telefoonnummer"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:ratedRatio rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0103"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_TransformerSpecificFeature ; 
@@ -25493,7 +25549,9 @@ tnt-et:zeroSequenceImpedanceMiddlePosition rdf:type rdf:Property ;
   skos:prefLabel "Zo Sys.1 M-Stell"@de, "Homopolar short-circuit voltage"@en, "Homopolaire kortsluitspanning"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/PERCENT> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/PERCENT> ;
+  skos:description "";
+  lpo:example "". 
 tnt-et:assetFunction rdf:type rdf:Property ; 
   rdfs:seeAlso "0437"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_FunctionalDesignParameter ; 
@@ -25555,7 +25613,9 @@ tnt-et:impedance rdf:type rdf:Property ;
   skos:prefLabel "Impedanz"@de, "Impedance"@en, "Impedantie"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Resistance> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/OHM> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/OHM> ;
+  skos:description "";
+  lpo:example "". 
 tnt-et:municipality rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0219"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_GeographicLocation ; 
@@ -25571,7 +25631,9 @@ tnt-et:postalCode rdf:type rdf:Property ;
   skos:definition "Postcode van het station."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/47d5f94b-fcb0-416a-ae73-b02c2fb39c71"^^xsd:string ; 
   skos:prefLabel "postleitzahl"@de, "Postal Code"@en, "Postcode"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:purpose rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_DocumentMetadata ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/e6da7bdc-0b87-497e-a524-18c9aa81d7ae"^^xsd:string ; 
@@ -25702,7 +25764,9 @@ tnt-et:nominalReactivePower rdf:type rdf:Property ;
   skos:prefLabel "Nennblindleistung"@de, "Nominal reactive power"@en, "Nominaal blindvermogen"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ReactivePower> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/MegaV-A_Reactive> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/MegaV-A_Reactive> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:objectIdentifier rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_IdentificationAndTagging ; 
   skos:altLabel "object-ID"@de, "Objekttyp-Id"@nl ; 
@@ -25750,7 +25814,9 @@ tnt-et:powerAtThermalShortCircuitCurrent rdf:type rdf:Property ;
   skos:prefLabel "Kurzschluss Leistung"@de, "Shortcircuit power"@en, "Kortsluitvermogen"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ApparentPower> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/MegaV-A> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/MegaV-A> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:shortCircuitCurrent rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0070"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -25790,7 +25856,9 @@ tnt-et:pCBFree rdf:type rdf:Property ;
   skos:example "XXX"^^xsd:string ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/f174b7b6-0f27-4ce3-98d2-69e9692b2de5"^^xsd:string ; 
   skos:prefLabel "PCB Frei"@de, "PCB Free"@en, "PCB vrij"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en . 
+  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:crossSection rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0147"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_MechanicalAndDimension ; 
@@ -25820,7 +25888,9 @@ tnt-et:nominalShortCircuitDuration rdf:type rdf:Property ;
   skos:prefLabel "Nominale Kurzschlussdauer"@de, "Nominal short circuit duration"@en, "Nominale tijdseenheid kortsluiting"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/Time> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/s> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/s> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:ratedThermalShortCircuitCurrent rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0071"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -25862,9 +25932,11 @@ tnt-et:nominalCurrentAsInstalledSummer rdf:type rdf:Property ;
   skos:example "99999.99"^^xsd:string ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/77b19a8e-9c16-467e-b95b-01338c0a8599"^^xsd:string ; 
   skos:prefLabel "Nennstrom wie installiert (Sommerbedingungen)"@de, "Rated current as installed (summer conditions)"@en, "Nominale stroom als geïnstalleerd zomer"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
+  skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ;
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ElectricCurrent> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:nominalCurrentAsInstalledWinter rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0274"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_ElectricalParameter ; 
@@ -25874,7 +25946,9 @@ tnt-et:nominalCurrentAsInstalledWinter rdf:type rdf:Property ;
   skos:prefLabel "Installierter Nennstrom (Winterbedingungen)"@de, "Nominal current installed (winter conditions)"@en, "Nominale stroom als geïnstalleerd winter"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Onshore"@en ; 
   <https://w3id.org/def/basicsemantics-owl#quantityKind> <http://qudt.org/vocab/quantitykind/ElectricCurrent> ; 
-  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> . 
+  <https://w3id.org/def/basicsemantics-owl#unit> <http://qudt.org/vocab/unit/A> ;
+  skos:description "";
+  lpo:example "".
 tnt-et:ownerName rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0049"^^xsd:anyURI ; 
   rdfs:subPropertyOf tnt-et:CAT\_StakeholderAndRole ; 
@@ -25963,7 +26037,9 @@ tnt-et:manufacturerProductType rdf:type rdf:Property ;
   skos:definition "Basic type"@en, "De typeaanduiding geeft aan van welk type een bedrijfsmiddel is. Deze typeaanduiding wordt meestal door de fabrikant gegeven (niet altijd; kan ook door TenneT gebeuren, bijvoorbeeld in het geval van masten) en is dan op het type- en serienummerplaatje te vinden."@nl ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/450b4eab-8781-42d6-99f8-47776a1d8fb9"^^xsd:string ; 
   skos:prefLabel "Objekttyp"@de, "Manufacturer product type"@en, "Typeaanduiding"@nl ; 
-  skos:scopeNote "Applicable for the Aspects: Physical equipment, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en . 
+  skos:scopeNote "Applicable for the Aspects: Physical equipment, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines"@en ;
+  skos:description "";
+  lpo:example "".
 tnt-et:documentedBy rdf:type rdf:Property ; 
   rdfs:subPropertyOf tnt-et:CAT\_GroupingAndStructure ; 
   skos:notation "http://otl.tennet.eu/tnt/def/et/37edf06e-2e9c-4b56-a6e9-fd1cedd483af"^^xsd:string ; 
