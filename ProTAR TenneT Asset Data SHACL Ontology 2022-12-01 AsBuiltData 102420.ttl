@@ -1,13 +1,7 @@
 prefix dc: <http://purl.org/dc/elements/1.1/>
 prefix dcterms: <http://purl.org/dc/terms/>
-prefix err: <http://www.w3.org/2005/xqt-errors#>
-prefix fn: <http://www.w3.org/2005/xpath-functions#>
 prefix foaf: <http://xmlns.com/foaf/0.1/>
-prefix fti: <http://franz.com/ns/allegrograph/2.2/textindex/>
-prefix keyword: <http://franz.com/ns/keyword#>
 prefix lpo: <http://ot.tennet.eu/tnt/lpo#>
-prefix nd: <http://franz.com/ns/allegrograph/5.0/geo/nd#>
-prefix ndfn: <http://franz.com/ns/allegrograph/5.0/geo/nd/fn#>
 prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -21,6 +15,16 @@ prefix tnt-st: <http://otl.tennet.eu/tnt/def/st/>
 prefix tnt-xr: <http://otl.tennet.eu/tnt/def/xr/>
 prefix xs: <http://www.w3.org/2001/XMLSchema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+#Original authors : AMT
+#Original version - 2.4
+#Original date : 20221201 (YYYYMMDD)
+#Modification version
+#Modification date : 20240327
+#Modification author
+#Modification author's organisation :LPO
+
+
 lpo:example rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0028"^^xsd:anyURI ; 
   rdfs:subPropertyOf skos:example ; 
@@ -2041,7 +2045,19 @@ tnt-ot:IDOBJ rdf:type rdfs:Class, <http://www.w3.org/ns/shacl#NodeShape> ;
   skos:note "This is a root class to provide common identification for all classes needing identification and naming attributes. IdentifiedObject is used in the taxonomy to represent all common (dense matrix) properties for all object types."^^xsd:string ; 
   skos:prefLabel "Identified Object"@de, "Identified Object"@en, "Identified object"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ; 
-  <http://www.w3.org/ns/shacl#property> tnt-st:OTE15223\_IDOBJ\_description, tnt-st:OTE15270\_IDOBJ\_designationName, tnt-st:OTE15295\_IDOBJ\_annotation, tnt-st:OTE16276\_IDOBJ\_partOf, tnt-st:OTE16277\_IDOBJ\_realizes, tnt-st:OTE16280\_IDOBJ\_objectTypeName, tnt-st:OTE19246\_IDOBJ\_universalResourceIdentifier, tnt-st:OTE19311\_IDOBJ\_realizedBy, tnt-st:OTE19480\_IDOBJ\_designationType, tnt-st:OTE19481\_IDOBJ\_aliasName, tnt-st:OTE7065\_IDOBJ\_mRID, tnt-st:OTE7068\_IDOBJ\_name ; 
+  <http://www.w3.org/ns/shacl#property> 
+  tnt-st:OTE15223\_IDOBJ\_description, 
+  tnt-st:OTE15270\_IDOBJ\_designationName, 
+  tnt-st:OTE15295\_IDOBJ\_annotation, 
+  tnt-st:OTE16276\_IDOBJ\_partOf, 
+  tnt-st:OTE16277\_IDOBJ\_realizes, 
+  tnt-st:OTE16280\_IDOBJ\_objectTypeName, 
+  tnt-st:OTE19246\_IDOBJ\_universalResourceIdentifier, 
+  tnt-st:OTE19311\_IDOBJ\_realizedBy, 
+  tnt-st:OTE19480\_IDOBJ\_designationType, 
+  tnt-st:OTE19481\_IDOBJ\_aliasName, 
+  tnt-st:OTE7065\_IDOBJ\_mRID, 
+  tnt-st:OTE7068\_IDOBJ\_name ; 
   <https://w3id.org/def/basicsemantics-owl#abbreviation> "IDOBJ"^^xsd:string . 
 tnt-ot:ImpedanceRelay rdf:type rdfs:Class, <http://www.w3.org/ns/shacl#NodeShape> ; 
   rdfs:subClassOf tnt-ot:DistanceRelay ; 
@@ -4810,7 +4826,7 @@ tnt-po:AA23\_Procurement rdf:type tnt-pl:DCC\_ActivityAreaKind ;
 tnt-po:AA24\_DeliveryAndShipping rdf:type tnt-pl:DCC\_ActivityAreaKind ; 
   skos:notation "http://otl.tennet.eu/tnt/def/po/1f3b0cb8-50cd-4958-ba88-21dbeec72c4a"^^xsd:string ; 
   skos:note "24 - Delivery and shipping"^^xsd:string ; 
-  skos:prefLabel "Lieferung und Versand"@de, "Delivery and shipping\t"@en, "Levering en verzending"@nl . 
+  skos:prefLabel "Lieferung und Versand"@de, "Delivery and shipping\t"@en, "Levering en verzending"@nl .
 tnt-po:AA25\_Installation rdf:type tnt-pl:DCC\_ActivityAreaKind ; 
   skos:notation "http://otl.tennet.eu/tnt/def/po/ccdcce74-99d6-4029-a4ac-119804f282be"^^xsd:string ; 
   skos:note "25 - Installation"^^xsd:string ; 
@@ -24238,7 +24254,7 @@ tnt-et:servicedBy rdf:type rdf:Property ;
   skos:notation "http://otl.tennet.eu/tnt/def/et/c37a5069-dd30-430c-8319-34c4b5e74556"^^xsd:string ; 
   skos:prefLabel "betreut von"@de, "serviced by"@en, "onderhouden door"@nl ; 
   skos:scopeNote "Applicable for the Aspects: Physical equipment"@en, "Applicable for the Contexts: Netherlands, Germany, Onshore"@en ;
-  skos:description "Organisation that provides services to customers. serviceSupplier (was: maintainer) replaces "service provider (identificatie)" (NL).";
+  skos:description "Organisation that provides services to customers. serviceSupplier (was: maintainer) replaces service provider (identificatie) (NL).";
   lpo:example " Not available - see description". 
 tnt-et:sourceSystemParentID rdf:type rdf:Property ; 
   rdfs:seeAlso "TAG0220"^^xsd:anyURI ; 
