@@ -15,7 +15,7 @@ prefix tnt-st: <http://otl.tennet.eu/tnt/def/st/>
 prefix tnt-xr: <http://otl.tennet.eu/tnt/def/xr/>
 prefix xs: <http://www.w3.org/2001/XMLSchema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-2026-
+
 #Original authors : AMT
 #Original version - 2.4
 #Original date : 20221201 (YYYYMMDD)
