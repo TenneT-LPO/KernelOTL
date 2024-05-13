@@ -17,12 +17,327 @@ prefix xs: <http://www.w3.org/2001/XMLSchema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 #Original authors : AMT
-#Original version - 2.4
+#Original version - 2.4.2
 #Original date : 20221201 (YYYYMMDD)
 #Modification version
 #Modification date : 20240327
 #Modification author
 #Modification author's organisation :LPO
+voaf:Vocabulary a owl:Class .
+dcterms:title a owl:AnnotationProperty .
+dcterms:description a owl:AnnotationProperty .
+dcterms:issued a owl:AnnotationProperty .
+dcterms:modified a owl:AnnotationProperty .
+dcterms:creator a owl:AnnotationProperty .
+dcterms:contributor a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+schema:domainIncludes a owl:AnnotationProperty .
+schema:rangeIncludes a owl:AnnotationProperty .
+vs:term_status a owl:AnnotationProperty .
+vcard:fn a owl:AnnotationProperty .
+schema:name a owl:AnnotationProperty .
+
+#Authorship and versioning
+<https://github.com/TenneT-LPO/KernelOTL/> rdf:type owl:Ontology , voaf:Vocabulary ;
+    dcterms:modified    "2024-05-13T14:30:00"^^xsd:dateTime ;
+    dcterms:issued    "2022-12-01T12:00:00"^^xsd:dateTime ;
+    owl:versionInfo    "2.4.2" ;
+    owl:versionIRI <https://github.com/TenneT-LPO/KernelOTL/> ;
+    owl:priorVersion <https://github.com/TenneT-LPO/KernelOTL/tree/2.4.1> ;
+    dcterms:title    "Kernel OTL adapted by 2GW"@en ;
+    dcterms:description    """Kernel OTL sourced from AMT, adapted for 2GW projects"""@en ;
+	dcterms:creator "Michiel van Wijk" ;
+	dcterms:creator <http://tennet.eu/person1#> ;
+	dcterms:creator <<http://tennet.eu/person2#> ;
+	dcterms:contributor "All contributing members of the Kernel OTL" ;
+    dcterms:license <https://creativecommons.org/licenses/by/1.0/> .
+ 
+<<http://tennet.eu/person2#> a vcard:Individual , schema:Person; 
+	vcard:fn    "Michiel van Wijk" ;
+	schema:name "Michiel van Wijk" .
+
+<<http://tennet.eu/person1#> a vcard:Individual , schema:Person ; 
+	vcard:fn    "Madhumitha Senthilvel" ;
+	schema:name "Madhumitha Senthilvel" .
+#End of authorship and versioning metadata
+
+#Addition of missing classes on 10.05.2024 
+tnt-po:AirConditioner a tnt-pl:SOT_AirConditioning ;
+    skos:definition "Air Conditioner"@en,
+        "Air conditioner"@nl ;
+    skos:notation "http://otl.tennet.eu/tnt/def/po/04226dfe-da9a-4480-b2ab-0e8a3ad5bc4e"^^xsd:string ;
+    skos:note "Air Conditioner"^^xsd:string ;
+    skos:prefLabel "Klimaanlage"@de,
+        "Air Conditioner"@en,
+        "Air conditioner"@nl ;
+    bs:abbreviation "EQ"^^xsd:string .
+
+tnt-ot:AirConditioner a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:FacilityComponent ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/d8741af1-2fde-4d57-afcc-4e391ae994c8"^^xsd:string ;
+    skos:prefLabel "Klimaanlage"@de,
+        "Air conditioning"@en,
+        "Airconditioning"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE19174_AirConditioner_subObjectType,
+        tnt-st:OTE20251_AirConditioner_documentedBy_0 ;
+    bs:abbreviation "AirConditioner"^^xsd:string .
+
+tnt-ot:Antenna a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:ComModule ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/fdf80442-b00e-4b81-95c2-c0485faaae3c"^^xsd:string ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Asset product type"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Power lines"@en ;
+    sh:property tnt-st:OTE22901_Antenna_masterDataTag,
+        tnt-st:OTE24580_Antenna_documentedBy ;
+    bs:abbreviation "Antenna"^^xsd:string .
+
+tnt-po:Antenna a tnt-pl:SOT_ComModule ;
+    skos:definition "Antenna"@en,
+        "Antenne"@nl ;
+    skos:notation "http://otl.tennet.eu/tnt/def/po/2a86b128-2cf7-43d8-ad36-2687637639ed"^^xsd:string ;
+    skos:note "Antenna"^^xsd:string ;
+    skos:prefLabel "Antenne"@de,
+        "Antenna"@en,
+        "Antenne"@nl ;
+    bs:abbreviation "TF"^^xsd:string .
+
+tnt-ot:Appliance a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:Tool ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/9bbe3e09-e0ae-4589-afac-e034421cf7e2"^^xsd:string ;
+    skos:prefLabel "Haushaltsgerät"@de,
+        "Household appliance"@en,
+        "Huishoudelijk apparaat"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE19170_Appliance_subObjectType ;
+    bs:abbreviation "Appliance"^^xsd:string .
+
+tnt-ot:Building a rdfs:Class ;
+    tnt-xr:REF_AM-STDB_Code "Building"^^xsd:string ;
+    tnt-xr:REF_GIS-UNC_Code "StructureBoundary|176|208"^^xsd:string ;
+    tnt-xr:REF_GIS-UNC_Name "Facility (Harmonized) Building"^^xsd:string ;
+    tnt-xr:REF_GIS-UNC_URL "https://www.utilitynetworkcommunity.com/data-model/"^^xsd:anyURI ;
+    tnt-xr:REF_GIS-UNM_Code "Building boundary"^^xsd:string ;
+    tnt-xr:REF_GIS-UNM_Name "Facility (Harmonized) Building"^^xsd:string ;
+    tnt-xr:REF_SAP4-HANA_Code "BUILDG"^^xsd:string,
+        "PHYSTRC"^^xsd:string ;
+    tnt-xr:REF_SAP4-HANA_Name "Gebouw"^^xsd:string,
+        "Gebäude"^^xsd:string ;
+    tnt-xr:REF_TAG2.2_Code "GEBOUW"^^xsd:string ;
+    tnt-xr:REF_TAG2.2_Name "Gebouw"^^xsd:string ;
+    tnt-xr:REF_TAG5_Code "GEBOUW"^^xsd:string ;
+    tnt-xr:REF_TAG5_Name "Gebouw"^^xsd:string ;
+    rdfs:subClassOf tnt-ot:Facility ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/3b668178-20ea-42e5-ac12-79219687de4e"^^xsd:string ;
+    skos:prefLabel "Gebäude"@de,
+        "Building"@en,
+        "Gebouw"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore"@en ;
+    bs:abbreviation "Building"^^xsd:string .
+
+tnt-ot:Coating a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:MaterialItem ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/81023041-ed35-4e2d-b266-26f46a41120a"^^xsd:string ;
+    skos:prefLabel "Beschichtung"@de,
+        "Coating"@en,
+        "Oppervlakteafwerking"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE22918_Coating_masterDataTag ;
+    bs:abbreviation "Coating"^^xsd:string .
+
+tnt-ot:Compartment a rdfs:Class,
+        sh:NodeShape ;
+    tnt-xr:REF_GIS-UNM_Code "Pressure tank"^^xsd:string ;
+    tnt-xr:REF_GIS-UNM_Name "AirPressure (German) Druckbehälter"^^xsd:string ;
+    tnt-xr:REF_SAP-BIS_Code "DB"^^xsd:string ;
+    tnt-xr:REF_SAP-BIS_Name "Druckbehälter"^^xsd:string ;
+    tnt-xr:REF_SAP4-HANA_Code "Tankair"^^xsd:string ;
+    tnt-xr:REF_SAP4-HANA_Name "Druckbehälter (SE-TANKAIR)"^^xsd:string ;
+    tnt-xr:REF_SISNET_Code "E_OLDV (50090)"^^xsd:string ;
+    tnt-xr:REF_SISNET_Name "Oliedrukvat"^^xsd:string ;
+    rdfs:subClassOf tnt-ot:EquipmentComponent ;
+    skos:definition "Abteil/Fach"@de ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/5a5494db-c59b-4bc2-9d2c-56bcd265f93f"^^xsd:string ;
+    skos:prefLabel "Kompartiment"@de,
+        "Compartment"@en,
+        "Compartiment"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE16208_Compartment_subObjectType,
+        tnt-st:OTE16226_Compartment_holdSubstance,
+        tnt-st:OTE24258_Compartment_extinguishingAgent ;
+    bs:abbreviation "Compartment"^^xsd:string .
+  
+tnt-ot:Damper a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:Actuator ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/a3931bb4-cf1e-4887-9c50-50f9d531fcaf"^^xsd:string ;
+    skos:prefLabel "Dämpfer"@de,
+        "Damper"@en,
+        "Demper"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE24577_Damper_documentedBy ;
+    bs:abbreviation "Damper"^^xsd:string .
+
+
+tnt-ot:DCLine a rdfs:Class ;
+    tnt-xr:REF_IEC-CIM_Code "DCLine"^^xsd:string ;
+    tnt-xr:REF_IEC-CIM_URL "https://ontology.tno.nl/IEC_CIM/cim_DCLine.html"^^xsd:anyURI ;
+    rdfs:seeAlso "https://ontology.tno.nl/IEC_CIM/cim_DCLine.html"^^xsd:anyURI ;
+    rdfs:subClassOf tnt-ot:DCEquipmentContainer ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/39fc169d-e87a-4d11-b583-cd9397d15920"^^xsd:string ;
+    skos:prefLabel "DC Line"@en,
+        "Gelijkstroomverbinding"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type"@en,
+        "Applicable for the Contexts: Netherlands, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    bs:abbreviation "DCLine"^^xsd:string .
+
+tnt-ot:DesignatedObject a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:IDOBJ ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/02e43d94-0530-4a7f-90b6-7c77acb8cd68"^^xsd:string ;
+    skos:note "A designated object is an identified object that allows for designation keys, classification and identifiers without additional data requirements."^^xsd:string ;
+    skos:prefLabel "Bestimmtes Objekt"@de,
+        "Designated object"@en,
+        "Identificeerbaar object"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE24567_DesignatedObject_type ;
+    bs:abbreviation "DesignatedObject"^^xsd:string .
+
+
+tnt-po:FireExtinguisher a tnt-pl:SOT_FireProtection ;
+    skos:definition "Fire Extinguisher"@en,
+        "Brandblusser"@nl ;
+    skos:notation "http://otl.tennet.eu/tnt/def/po/68a9806f-dc59-4a96-b75d-8862fd6eddc8"^^xsd:string ;
+    skos:note "Fire Extinguisher"^^xsd:string ;
+    skos:prefLabel "Feuerlöscher"@de,
+        "Fire Extinguisher"@en,
+        "Brandblusser"@nl ;
+    bs:abbreviation "CN01"^^xsd:string .
+
+tnt-ot:Furniture a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:FacilityComponent ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/8e081fa7-f004-470f-9a05-9cda9505686b"^^xsd:string ;
+    skos:prefLabel "Möblierung"@de,
+        "Furniture"@en,
+        "Meubilair"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE19169_Furniture_subObjectType ;
+    bs:abbreviation "Furniture"^^xsd:string .
+
+tnt-ot:Interface a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:IDOBJ ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/b16c2af4-9fb4-4d1c-8cd7-bbe40b1e18e5"^^xsd:string ;
+    skos:prefLabel "Schnittstelle"@de,
+        "Interface"@en,
+        "Interface"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE16343_Interface_subObjectType,
+        tnt-st:OTE19478_Interface_masterDataTag ;
+    bs:abbreviation "Interface"^^xsd:string .
+
+tnt-ot:LifeSavingAppliance a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:Appliance ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/d7e7dcbc-4568-416d-a1d9-855f9d555fbd"^^xsd:string ;
+    skos:prefLabel "Rettungsgerät"@de,
+        "Life Saving Appliance"@en,
+        "Levensreddend apparaat"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE16347_LifeSavingAppliance_subObjectType ;
+    bs:abbreviation "LifeSavingAppliance"^^xsd:string .
+
+tnt-ot:MeteoMeter a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:Meter ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/f995a88d-74a4-4663-86f6-1cfdf9ebfd29"^^xsd:string ;
+    skos:prefLabel "Meteo Meter"@de,
+        "Meteo Meter"@en,
+        "Meteo-meter"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE24579_MeteoMeter_documentedBy ;
+    bs:abbreviation "MeteoMeter"^^xsd:string .
+
+tnt-ot:Mover a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:Tool ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/f621a997-e3a5-4189-ac3a-9afa0bb61ae3"^^xsd:string ;
+    skos:prefLabel "Mover"@de,
+        "Mover"@en,
+        "Mover"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Asset product type"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE24568_Mover_subObjectType,
+        tnt-st:OTE24582_Mover_documentedBy ;
+    bs:abbreviation "Mover"^^xsd:string .
+
+tnt-ot:Pump a rdfs:Class,
+        sh:NodeShape ;
+    tnt-xr:REF_GIS-UNM_Code "Three Phase Pump"^^xsd:string ;
+    tnt-xr:REF_GIS-UNM_Name "Ancillary (Dutch) Ölpumpe"^^xsd:string ;
+    tnt-xr:REF_SAP4-HANA_Code "PUMP"^^xsd:string ;
+    tnt-xr:REF_SAP4-HANA_Name "Pumpe"^^xsd:string ;
+    rdfs:subClassOf tnt-ot:Tool ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/d949b17a-b4be-4ee1-8c8c-161a86259f1b"^^xsd:string ;
+    skos:prefLabel "Pumpe"@de,
+        "Pump"@en,
+        "Pomp"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE19250_Pump_subObjectType,
+        tnt-st:OTE24581_Pump_documentedBy ;
+    bs:abbreviation "Pump"^^xsd:string .
+
+tnt-po:Valve a tnt-pl:DTK_SurgeArrester ;
+    skos:notation "http://otl.tennet.eu/tnt/def/po/e39def36-1ea1-4ab5-9466-99a13222cfc0"^^xsd:string ;
+    skos:prefLabel "Ventil"@de,
+        "Valve"@en,
+        "Klep"@nl .
+
+tnt-ot:Valve a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:Actuator ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/76a38fc2-8bd8-482e-a891-333977eab484"^^xsd:string ;
+    skos:prefLabel "Ventil"@de,
+        "Valve"@en,
+        "Klep"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE24578_Valve_documentedBy ;
+    bs:abbreviation "Valve"^^xsd:string .
+
+tnt-ot:Ventilator a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf tnt-ot:FacilityComponent ;
+    skos:notation "http://otl.tennet.eu/tnt/def/ot/2ad2d3b6-1658-4b9b-9245-39679caa2d89"^^xsd:string ;
+    skos:prefLabel "Belüftung"@de,
+        "Ventilation"@en,
+        "Ventilatie"@nl ;
+    skos:scopeNote "Applicable for the Aspects: Asset container, Physical equipment, Functional location, Asset product type, Organisation, Information, Super class, Materials class, Component class"@en,
+        "Applicable for the Contexts: Netherlands, Germany, Onshore, Offshore, Power lines, Internal service provider, External service provider, Third party assets, Connected party"@en ;
+    sh:property tnt-st:OTE19173_Ventilator_subObjectType,
+        tnt-st:OTE24574_Ventilator_documentedBy ;
+    bs:abbreviation "Ventilator"^^xsd:string .
+
+##End of update KernelOTL2.4.2
 
 
 lpo:example rdf:type rdf:Property ; 
