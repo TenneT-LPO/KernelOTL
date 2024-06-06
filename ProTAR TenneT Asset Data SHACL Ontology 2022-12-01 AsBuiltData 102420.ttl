@@ -23,7 +23,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 #Modification date : 20240327
 #Modification author
 #Modification author's organisation :LPO
-voaf:Vocabulary a owl:Class .
+foaf:Vocabulary a owl:Class .
 dcterms:title a owl:AnnotationProperty .
 dcterms:description a owl:AnnotationProperty .
 dcterms:issued a owl:AnnotationProperty .
@@ -40,7 +40,7 @@ vcard:fn a owl:AnnotationProperty .
 schema:name a owl:AnnotationProperty .
 
 #Authorship and versioning
-<https://github.com/TenneT-LPO/KernelOTL/> rdf:type owl:Ontology , voaf:Vocabulary ;
+<https://github.com/TenneT-LPO/KernelOTL/> rdf:type owl:Ontology, voaf:Vocabulary ;
     dcterms:modified    "2024-05-13T14:30:00"^^xsd:dateTime ;
     dcterms:issued    "2022-12-01T12:00:00"^^xsd:dateTime ;
     owl:versionInfo    "2.4.2" ;
