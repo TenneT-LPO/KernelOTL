@@ -44,7 +44,7 @@ vcard:fn a owl:AnnotationProperty .
 schema:name a owl:AnnotationProperty .
 
 #Authorship and versioning
-<https://github.com/TenneT-LPO/KernelOTL/> rdf:type owl:Ontology, voaf:Vocabulary ;
+<https://github.com/TenneT-LPO/KernelOTL/> rdf:type owl:Ontology, foaf:Vocabulary ;
     dcterms:modified    "2024-05-13T14:30:00"^^xsd:dateTime ;
     dcterms:issued    "2022-12-01T12:00:00"^^xsd:dateTime ;
     owl:versionInfo    "2.4.2" ;
